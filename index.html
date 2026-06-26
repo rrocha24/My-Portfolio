@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Rocha - Fullstack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="neural-network" id="neuralNetwork"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Hexagon background -->
+                    <polygon points="50,5 85,25 85,65 50,85 15,65 15,25" fill="none" stroke="url(#gradientStroke)" stroke-width="2"/>
+                    <!-- Neural network nodes -->
+                    <circle cx="50" cy="30" r="4" fill="#00ffff"/><circle cx="35" cy="45" r="4" fill="#ff00ff"/><circle cx="65" cy="45" r="4" fill="#ff00ff"/><circle cx="35" cy="65" r="4" fill="#00ffff"/><circle cx="65" cy="65" r="4" fill="#00ffff"/><circle cx="50" cy="55" r="5" fill="#7c3aed"/>
+                    <!-- Connection lines -->
+                    <line x1="50" y1="30" x2="35" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/><line x1="50" y1="30" x2="65" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/><line x1="35" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/><line x1="65" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/><line x1="50" y1="55" x2="35" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/><line x1="50" y1="55" x2="65" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Roberto Rocha</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="projects.html" onclick="closeMenu()">Projects</a>
+            <a href="#experience" onclick="closeMenu()">Experience</a>
+            <a href="#skills" onclick="closeMenu()">Skills</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Roberto Rocha</h1>
+            <p>Fullstack Developer</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Years in Customer Service</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Diverse Leadership Careers</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="animate-on-scroll">Professional Summary</h2>
+        <div class="about-content">
+            <div class="about-text animate-on-scroll slide-left">
+                <p>I'm a Fullstack Developer who lives to build. Whatever takes shape in my mind, 
+                    I have the skills to make it real—front to back, concept to launch. 
+                    I'm driven by the entire journey of creation: architecting the logic that powers an application, 
+                    crafting interfaces that feel intuitive and alive, 
+                    and solving the messy problems that surface along the way. 
+                    Every project is a chance to learn something new and push what I'm capable of. 
+                    For me, code isn't just a tool—it's the bridge between an idea and something real that people can actually use. 
+                    And there's nothing quite like watching a concept I imagined come to life on the screen.</p>
+                <p>With over 12 years of leadership and operations experience, I understand how critical efficient processes are to a business's success.</p>
+                <p>I design and deploy workflows and platforms. My goal is to bridge the gap between clean user interfaces and to help businesses run smarter, save time, and focus on growth.</p>
+            </div>
+            <div class="about-visual animate-on-scroll slide-right">
+                <div class="blockchain-visual">
+                    <div class="block">n8n</div>
+                    <div class="block">React</div>
+                    <div class="block">JS</div>
+                    <div class="block">API</div>
+                    <div class="block">Bots</div>
+                    <div class="block">HTML</div>
+                    <div class="block">CSS</div>
+                    <div class="block">Zapier</div>
+                    <div class="block">Web</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-stats animate-on-scroll scale-up">
+            <div class="about-stat">
+                <span class="about-stat-number">3</span>
+                <span class="about-stat-label">Custom Business Systems Built</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-number">4</span>
+                <span class="about-stat-label">Management Positions Led</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="animate-on-scroll">Work & Education History</h2>
+        
+        <div class="schedule-tabs">
+            <button class="tab-btn" onclick="showSchedule('day2', event)">Leadership & Operations</button>
+            <button class="tab-btn" onclick="showSchedule('day3', event)">Early Career & Education</button>
+        </div>
+
+        <div id="day2" class="schedule-content">
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Apr 2021 - Present</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Team Lead – Fresh Area</div>
+                            <div class="timeline-speaker">Walmart</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Direct daily operations for the entire Fresh division (Deli, Bakery, Meat, Produce), managing a multi-department team to meet aggressive sales goals.</li>
+                                <li>Enforce strict food safety, cold chain compliance, and health department standards.</li>
+                                <li>Coordinate overnight replenishment and merchandising strategies for 100% "Grand Opening" readiness.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Jun 2017 - Apr 2021</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Department Manager – Frozen & Dairy</div>
+                            <div class="timeline-speaker">Walmart</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Owned the end-to-end performance of two high-traffic departments, consistently hitting KPIs for availability and inventory accuracy.</li>
+                                <li>Mentored and trained associates on scanning procedures, stocking efficiency, and customer service.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Jan 2014 - Jun 2017</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Sales Associate – Produce</div>
+                            <div class="timeline-speaker">Walmart</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Maintained department cleanliness and visual appeal through proactive culling, rotation, and high-quality stocking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="day3" class="schedule-content">
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Jan 2013 - Dec 2013</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Production Operator</div>
+                            <div class="timeline-speaker">Prime Products</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Operated high-volume machinery for the manufacturing of plastic sport bottles and drink containers.</li>
+                                <li>Conducted thorough quality inspections of molded products.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Jan 2012 - Dec 2012</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Production Worker</div>
+                            <div class="timeline-speaker">Monogram Dog Food Factory</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Executed the daily cooking and preparation of various pet food formulas.</li>
+                                <li>Operated automated bagging and sealing equipment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" onclick="toggleTimelineItem(this)">
+                    <div class="timeline-header">
+                        <div class="timeline-time">Sep 2018 - Nov 2020</div>
+                        <div class="timeline-info">
+                            <div class="timeline-title">Data Analysis & Programming Class</div>
+                            <div class="timeline-speaker">High School</div>
+                        </div>
+                        <div class="timeline-collapse-icon">▼</div>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-desc">
+                            <p>Focused on Financial Accounting, Data Analysis, Programming, and Machine Learning concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="animate-on-scroll">Technical Skills</h2>
+        <div class="sponsors-section animate-on-scroll">
+            <div class="sponsor-tiers">
+                <!-- Automation -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title platinum">Automation Specialists</h3>
+                    <div class="sponsors-grid platinum">
+                        <div class="sponsor-card platinum animate-on-scroll scale-up stagger-animation" style="--stagger: 1;">
+                            <div class="sponsor-logo" style="background: transparent; box-shadow:none; height:auto; color:var(--light);">🤖</div>
+                            <h4 class="sponsor-name">n8n</h4>
+                            <p class="sponsor-description">Workflow Automation</p>
+                        </div>
+                        <div class="sponsor-card platinum animate-on-scroll scale-up stagger-animation" style="--stagger: 2;">
+                            <div class="sponsor-logo" style="background: transparent; box-shadow:none; height:auto; color:var(--light);">📊</div>
+                            <h4 class="sponsor-name">Airtable</h4>
+                            <p class="sponsor-description">Database Management</p>
+                        </div>
+                        <div class="sponsor-card platinum animate-on-scroll scale-up stagger-animation" style="--stagger: 3;">
+                            <div class="sponsor-logo" style="background: transparent; box-shadow:none; height:auto; color:var(--light);">⚡</div>
+                            <h4 class="sponsor-name">Zapier / Make</h4>
+                            <p class="sponsor-description">Integrations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title gold">Frontend Development</h3>
+                    <div class="sponsors-grid gold">
+                        <div class="sponsor-card gold animate-on-scroll scale-up stagger-animation" style="--stagger: 4;">
+                            <h4 class="sponsor-name">React.js</h4>
+                            <p class="sponsor-description">UI Library</p>
+                        </div>
+                        <div class="sponsor-card gold animate-on-scroll scale-up stagger-animation" style="--stagger: 5;">
+                            <h4 class="sponsor-name">JavaScript</h4>
+                            <p class="sponsor-description">Core Language</p>
+                        </div>
+                        <div class="sponsor-card gold animate-on-scroll scale-up stagger-animation" style="--stagger: 6;">
+                            <h4 class="sponsor-name">HTML5 / CSS3</h4>
+                            <p class="sponsor-description">Web Structure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrations -->
+                <div class="sponsor-tier">
+                    <h3 class="tier-title silver">APIs & Integrations</h3>
+                    <div class="sponsors-grid silver">
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 7;">
+                            <h4 class="sponsor-name">REST APIs</h4>
+                        </div>
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 8;">
+                            <h4 class="sponsor-name">Webhooks</h4>
+                        </div>
+                        <div class="sponsor-card silver animate-on-scroll scale-up stagger-animation" style="--stagger: 9;">
+                            <h4 class="sponsor-name">GitHub / Git</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-info-section animate-on-scroll" style="margin-top: 0;">
+            <div class="contact-container">
+                <!-- Contact Form Column -->
+                <div class="contact-form-column">
+                    <h3 class="contact-form-title">Send a Message</h3>
+                    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-field">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-field">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-field">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required placeholder="How can we collaborate?">
+                        </div>
+                        <div class="form-field">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <!-- Honeypot: hidden from people, catches spam bots -->
+                        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none;">
+                        <button type="submit" class="contact-submit-btn">Send Message</button>
+                        <p id="contactStatus" class="contact-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="contact-info-column">
+                    <h3 class="contact-info-title">Let's Connect</h3>
+                    <div class="contact-info-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Texas, USA<br>Available for Remote Work</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value"><a href="mailto:rrocha2624@gmail.com">rrocha2624@gmail.com</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+1 (979) 702-0364</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Roberto Rocha</h2>
+            <p>Fullstack Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/roberto-rocha-683061340" class="social-link" title="LinkedIn">in</a>
+                <a href="https://www.facebook.com/roberto.rocha.697862" class="social-link" title="FaceBook">FB</a>
+            </div>
+            <p>© 2026 Roberto Rocha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- Floating contact / WhatsApp widget -->
+    <div class="wa-widget-container">
+      <div class="wa-chat-popup" id="wa-chat-popup">
+        <div class="wa-chat-header">
+          <div class="wa-header-left">
+            <div class="wa-profile-pic">
+              <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,5 85,25 85,65 50,85 15,65 15,25" fill="none" stroke="url(#waLogoGradient)" stroke-width="3"/>
+                <circle cx="50" cy="30" r="4" fill="#00ffff"/><circle cx="35" cy="45" r="4" fill="#ff00ff"/><circle cx="65" cy="45" r="4" fill="#ff00ff"/><circle cx="35" cy="65" r="4" fill="#00ffff"/><circle cx="65" cy="65" r="4" fill="#00ffff"/><circle cx="50" cy="55" r="5" fill="#7c3aed"/>
+                <defs><linearGradient id="waLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ffff"/><stop offset="50%" stop-color="#ff00ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="wa-header-info">
+              <strong>ROBERTO ROCHA</strong>
+              <span>Typically replies in minutes</span>
+            </div>
+          </div>
+          <button class="wa-close-btn" onclick="toggleWaChat()" aria-label="Close chat">&times;</button>
+        </div>
+
+        <div class="wa-chat-body">
+          <div class="wa-message">
+            ROBERTO ROCHA <br>👋 Hi! How can I help you today?
+          </div>
+          <div class="wa-chat-body" style="padding: 0; background: none; min-height: auto;">
+            <div class="wa-message" style="background: none; border: none; box-shadow: none; padding: 0; max-width: 100%;">
+              <a href="https://wa.me/19797020364?text=Hi%20Roberto%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="wa-suggestion-chip">
+                I'd like to discuss a project
+              </a>
+            </div>
+            <div class="wa-chat-body" style="padding: 0; background: none; min-height: auto;">
+              <div class="wa-message" style="background: none; border: none; box-shadow: none; padding: 0; max-width: 100%;">
+                <a href="https://wa.me/19797020364?text=Hi%20Roberto%2C%20I%20have%20a%20question." target="_blank" rel="noopener noreferrer" class="wa-suggestion-chip">
+                  I have a question
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wa-chat-footer">
+          <a href="https://wa.me/19797020364?text=Hi%20Roberto%21%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer" class="wa-start-chat-btn">
+            <svg width="20" height="20" viewBox="3 5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"/></svg>
+            Chat Now
+          </a>
+        </div>
+      </div>
+
+      <div class="wa-intro-bubble">
+        <p>Click here to message me &#8594;</p>
+      </div>
+
+      <button class="wa-floating-btn" onclick="toggleWaChat()" aria-label="Open chat">
+        <svg width="32" height="32" viewBox="3 5 25 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"/></svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

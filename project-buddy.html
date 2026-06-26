@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy — Language Companion — Roberto Rocha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage">
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="neural-network" id="neuralNetwork"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,5 85,25 85,65 50,85 15,65 15,25" fill="none" stroke="url(#gradientStroke)" stroke-width="2"/>
+                    <circle cx="50" cy="30" r="4" fill="#00ffff"/><circle cx="35" cy="45" r="4" fill="#ff00ff"/><circle cx="65" cy="45" r="4" fill="#ff00ff"/><circle cx="35" cy="65" r="4" fill="#00ffff"/><circle cx="65" cy="65" r="4" fill="#00ffff"/><circle cx="50" cy="55" r="5" fill="#7c3aed"/>
+                    <line x1="50" y1="30" x2="35" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/><line x1="50" y1="30" x2="65" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.5"/><line x1="35" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/><line x1="65" y1="45" x2="50" y2="55" stroke="#ff00ff" stroke-width="1" opacity="0.5"/><line x1="50" y1="55" x2="35" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/><line x1="50" y1="55" x2="65" y2="65" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Roberto Rocha</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html#about" onclick="closeMenu()">About</a>
+            <a href="projects.html" onclick="closeMenu()">Projects</a>
+            <a href="index.html#experience" onclick="closeMenu()">Experience</a>
+            <a href="index.html#skills" onclick="closeMenu()">Skills</a>
+            <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </header>
+    <!-- Projects menu bar (links to every project page) -->
+    <nav class="proj-menu" aria-label="Projects">
+        <div class="proj-menu-inner">
+            <span class="proj-menu-label">Projects</span>
+            <a href="projects.html">All Projects</a>
+            <a href="project-convergence.html">Convergence of Realms</a>
+            <a href="project-automated-systems.html">Business Automation</a>
+            <a href="project-buddy.html" class="active">Buddy</a>
+            <a href="project-tj-gadgets.html">TJ Gadgets Store</a>
+            <a href="project-tj-support.html">Support Agent</a>
+            <a href="project-hourly-pay.html">Pay Calculator</a>
+            <a href="project-flux.html">FLUX Engine</a>
+        </div>
+    </nav>
+
+    <main class="proj-detail">
+        <a class="proj-back" href="projects.html">&larr; All projects</a>
+        <div class="proj-hero">
+            <span class="pf-eyebrow">Project</span>
+            <h1>Buddy — Language Companion</h1>
+            <p class="proj-tagline">Conversational language practice, out loud</p>
+        </div>
+        <div class="proj-body">
+                <div class="pf-browser">
+                    <div class="pf-browser-bar">
+                        <span class="pf-dot r"></span><span class="pf-dot y"></span><span class="pf-dot g"></span>
+                        <span class="pf-url">buddy-language-companion.vercel.app</span>
+                        <span class="pf-live">Live</span>
+                    </div>
+                    <iframe src="https://buddy-language-companion.vercel.app" title="Buddy — Language Companion — live preview" loading="lazy"></iframe>
+                </div>
+            <div class="proj-panel">
+                <h2>About this project</h2>
+                <p class="pf-desc">A friendly companion that lets you practice a new language by actually talking. Speak out loud, get real-time voice responses, and keep a relaxed, low-pressure conversation going whenever you want to learn.</p>
+                <h2>Highlights</h2>
+                <ul class="pf-features">
+                        <li>Practice across 7 languages — English, Spanish, French, Portuguese, Japanese, Hindi, and Arabic.</li>
+                        <li>Live voice conversations with real speaking and listening.</li>
+                        <li>Warm, encouraging tone that gently checks in if you go quiet.</li>
+                        <li>Runs right in the browser — nothing to install.</li>
+                </ul>
+                <h2>Built with</h2>
+                <div class="pf-tags">
+                        <span class="pf-tag">Voice AI</span>
+                        <span class="pf-tag">Language Learning</span>
+                        <span class="pf-tag">Web App</span>
+                        <span class="pf-tag">Vercel</span>
+                </div>
+                    <div class="pf-actions">
+                        <a class="pf-btn pf-btn-primary" href="https://buddy-language-companion.vercel.app" target="_blank" rel="noopener noreferrer">View live site &rarr;</a>
+                        <a class="pf-btn pf-btn-ghost" href="index.html#contact">Get in touch</a>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <nav class="proj-pager" aria-label="Project navigation">
+        <a class="prev" href="project-automated-systems.html"><div class="pager-dir">&larr; Previous</div><div class="pager-name">Automated Business Systems</div></a>
+        <a class="next" href="project-tj-gadgets.html"><div class="pager-dir">Next &rarr;</div><div class="pager-name">TJ Gadgets — Electronics Store</div></a>
+    </nav>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Roberto Rocha</h2>
+            <p>Fullstack Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/roberto-rocha-683061340" class="social-link" title="LinkedIn">in</a>
+                <a href="https://www.facebook.com/roberto.rocha.697862" class="social-link" title="FaceBook">FB</a>
+            </div>
+            <p>&copy; 2026 Roberto Rocha. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Floating contact / WhatsApp widget -->
+    <div class="wa-widget-container">
+      <div class="wa-chat-popup" id="wa-chat-popup">
+        <div class="wa-chat-header">
+          <div class="wa-header-left">
+            <div class="wa-profile-pic">
+              <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,5 85,25 85,65 50,85 15,65 15,25" fill="none" stroke="url(#waLogoGradient)" stroke-width="3"/>
+                <circle cx="50" cy="30" r="4" fill="#00ffff"/><circle cx="35" cy="45" r="4" fill="#ff00ff"/><circle cx="65" cy="45" r="4" fill="#ff00ff"/><circle cx="35" cy="65" r="4" fill="#00ffff"/><circle cx="65" cy="65" r="4" fill="#00ffff"/><circle cx="50" cy="55" r="5" fill="#7c3aed"/>
+                <defs><linearGradient id="waLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00ffff"/><stop offset="50%" stop-color="#ff00ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="wa-header-info">
+              <strong>ROBERTO ROCHA</strong>
+              <span>Typically replies in minutes</span>
+            </div>
+          </div>
+          <button class="wa-close-btn" onclick="toggleWaChat()" aria-label="Close chat">&times;</button>
+        </div>
+
+        <div class="wa-chat-body">
+          <div class="wa-message">
+            ROBERTO ROCHA <br>👋 Hi! How can I help you today?
+          </div>
+          <div class="wa-chat-body" style="padding: 0; background: none; min-height: auto;">
+            <div class="wa-message" style="background: none; border: none; box-shadow: none; padding: 0; max-width: 100%;">
+              <a href="https://wa.me/19797020364?text=Hi%20Roberto%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="wa-suggestion-chip">
+                I'd like to discuss a project
+              </a>
+            </div>
+            <div class="wa-chat-body" style="padding: 0; background: none; min-height: auto;">
+              <div class="wa-message" style="background: none; border: none; box-shadow: none; padding: 0; max-width: 100%;">
+                <a href="https://wa.me/19797020364?text=Hi%20Roberto%2C%20I%20have%20a%20question." target="_blank" rel="noopener noreferrer" class="wa-suggestion-chip">
+                  I have a question
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wa-chat-footer">
+          <a href="https://wa.me/19797020364?text=Hi%20Roberto%21%20I%27d%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer" class="wa-start-chat-btn">
+            <svg width="20" height="20" viewBox="3 5 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"/></svg>
+            Chat Now
+          </a>
+        </div>
+      </div>
+
+      <div class="wa-intro-bubble">
+        <p>Click here to message me &#8594;</p>
+      </div>
+
+      <button class="wa-floating-btn" onclick="toggleWaChat()" aria-label="Open chat">
+        <svg width="32" height="32" viewBox="3 5 25 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"/></svg>
+      </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
